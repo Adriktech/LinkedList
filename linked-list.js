@@ -15,11 +15,14 @@ class LinkedList {
 
   addToHead(val) {
     // Your code here
-    
+    const newNode = new LinkedList (value, null)
+    newNode.next = this.head
+    this.head = newNode
   }
 
   addToTail(val) {
     // Your code here
+
   }
 
   // You can use this function to help debug
